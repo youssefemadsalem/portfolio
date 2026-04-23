@@ -1,7 +1,15 @@
 import React from "react";
 
 function App() {
-  return <div className="h-360 text-amber-500">App</div>;
+  return (
+    <div className="min-h-screen bg-black">
+      <Navbar />
+
+      <main>
+        <Hero />
+      </main>
+    </div>
+  );
 }
 
 export default App;
