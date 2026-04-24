@@ -1,6 +1,6 @@
 export const PERSONAL_INFO = {
   name: "youssef emadeldin",
-  title: "",
+  title: "frontend developer",
   email: "youssefemadeldin22@gmail.com",
   location: "Cairo, Egypt",
   tagline: "Crafting seamless digital experiences with modern web technologies",
