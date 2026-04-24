@@ -5,16 +5,18 @@ import {
   SiTailwindcss,
   SiNodedotjs,
   SiMongodb,
+  SiAngular,
+  SiExpress,
 } from "react-icons/si";
 import { PERSONAL_INFO, STATS } from "../../utils/constants";
 import { scrollToSection } from "../../hooks/useScrollSpy";
 import FadeIn from "../animations/FadeIn";
-// import RadialGradientBackground from "../backgrounds/RadialGradientBackground";
+import RadialGradientBackground from "../backgrounds/RadialGradientBackground";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
-      {/* <RadialGradientBackground variant="hero" /> */}
+      <RadialGradientBackground variant="hero" />
 
       {/* Content Container */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
@@ -33,7 +35,7 @@ const Hero = () => {
 
             <FadeIn delay={100}>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-white mb-6 leading-tight">
-                React.js Developer Portfolio
+                FullStack Web Developer
               </h1>
             </FadeIn>
 
@@ -83,7 +85,7 @@ const Hero = () => {
                 </div>
                 <div className="relative rounded-2xl overflow-hidden m-px h-[calc(100%-2px)]">
                   <img
-                    src="/public/WhatsApp Image 2025-03-11 at 11.28.19 AM.jpeg"
+                    src="/WhatsApp Image 2025-03-11 at 11.28.19 AM.jpeg"
                     alt="Developer"
                     className="w-full h-full object-cover"
                   />
@@ -94,10 +96,10 @@ const Hero = () => {
                   <FadeIn delay={500}>
                     <div className="flex items-center gap-4 bg-black/40 backdrop-blur-sm border border-white/10 rounded-full px-6 py-3">
                       <div className="w-6 h-6 items-center justify-center hover:scale-110 transition-transform duration-300">
-                        <SiReact className="w-full h-full text-primary" />
+                        <SiAngular className="w-full h-full text-primary" />
                       </div>
                       <div className="w-6 h-6 items-center justify-center hover:scale-110 transition-transform duration-300">
-                        <SiNextdotjs className="w-full h-full text-primary" />
+                        <SiReact className="w-full h-full text-primary" />
                       </div>
                       <div className="w-6 h-6 items-center justify-center hover:scale-110 transition-transform duration-300">
                         <SiTailwindcss className="w-full h-full text-primary" />
@@ -107,6 +109,9 @@ const Hero = () => {
                       </div>
                       <div className="w-6 h-6 items-center justify-center hover:scale-110 transition-transform duration-300">
                         <SiMongodb className="w-full h-full text-primary" />
+                      </div>
+                      <div className="w-6 h-6 items-center justify-center hover:scale-110 transition-transform duration-300">
+                        <SiExpress className="w-full h-full text-primary" />
                       </div>
                     </div>
                   </FadeIn>

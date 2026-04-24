@@ -1,6 +1,6 @@
 export const PERSONAL_INFO = {
   name: "youssef emadeldin",
-  title: "frontend developer",
+  title: "FullStack Web Developer",
   email: "youssefemadeldin22@gmail.com",
   location: "Cairo, Egypt",
   tagline: "Crafting seamless digital experiences with modern web technologies",
@@ -10,6 +10,9 @@ export const PERSONAL_INFO = {
     "My expertise spans the entire frontend ecosystem, from React and Next",
     "When I'm not coding, you'll find me contributing to open-source proj",
   ],
+  description: `Building modern, scalable web applications with React, JavaScript.
+and cutting-edge technologies. Transforming ideas into exceptional
+digital experiences.`,
 };
 
 export const SOCIAL_LINKS = {
