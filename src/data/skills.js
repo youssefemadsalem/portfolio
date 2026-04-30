@@ -1,52 +1,101 @@
-import { 
-  SiReact, 
-  SiJavascript, 
-  SiTypescript, 
-  SiNextdotjs, 
-  SiTailwindcss, 
-  SiJest 
+import {
+  SiReact,
+  SiJavascript,
+  SiTypescript,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiJest,
+  SiAngular,
+  SiGit,
+  SiHtml5,
+  SiCss,
+  SiBootstrap,
+  SiMongodb,
+  SiNpm,
 } from "react-icons/si";
 
 export const Skill = [
   {
     id: 1,
-    name: "React.js",
-    icon: SiReact, // Changed from Code2
+    name: "Angular",
+    icon: SiAngular,
     level: "Expert",
     experience: "3+ years",
   },
   {
     id: 2,
     name: "JavaScript",
-    icon: SiJavascript, // Changed from FileCode
+    icon: SiJavascript,
     level: "Expert",
     experience: "4+ years",
   },
   {
     id: 3,
     name: "TypeScript",
-    icon: SiTypescript, // Changed from FileType
+    icon: SiTypescript,
     level: "Advanced",
     experience: "2+ years",
   },
   {
     id: 4,
     name: "Next.js",
-    icon: SiNextdotjs, // Changed from Zap
+    icon: SiNextdotjs,
     level: "Advanced",
     experience: "2+ years",
   },
   {
     id: 5,
     name: "Tailwind CSS",
-    icon: SiTailwindcss, // Changed from Palette
+    icon: SiTailwindcss,
     level: "Expert",
     experience: "3+ years",
   },
   {
     id: 6,
     name: "Jest",
-    icon: SiJest, // Changed from TestTube
+    icon: SiJest,
+    level: "Advanced",
+    experience: "2+ years",
+  },
+  {
+    id: 7,
+    name: "git and github",
+    icon: SiGit,
+    level: "Advanced",
+    experience: "2+ years",
+  },
+  {
+    id: 8,
+    name: "html5",
+    icon: SiHtml5,
+    level: "Advanced",
+    experience: "2+ years",
+  },
+  {
+    id: 9,
+    name: "css3",
+    icon: SiCss,
+    level: "Advanced",
+    experience: "2+ years",
+  },
+  {
+    id: 10,
+    name: "bootstrap",
+    icon: SiBootstrap,
+    level: "Advanced",
+    experience: "2+ years",
+  },
+  {
+    id: 11,
+    name: "mongodb",
+    icon: SiMongodb,
+    level: "Advanced",
+    experience: "2+ years",
+  },
+  {
+    id: 12,
+    name: "npm",
+    icon: SiNpm,
     level: "Advanced",
     experience: "2+ years",
   },
