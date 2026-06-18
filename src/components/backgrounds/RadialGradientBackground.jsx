@@ -85,7 +85,7 @@ const RadialGradientBackground = ({ variant = "hero", gradients = [] }) => {
   };
 
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <div className="absolute inset-0  pointer-events-none">
       {activeGradients.map((gradient, index) => (
         <div
           key={index}

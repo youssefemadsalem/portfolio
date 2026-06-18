@@ -9,15 +9,17 @@ import Contact from "./components/sections/Contact";
 
 function App() {
   return (
-    <div className="min-h-screen bg-black">
+    // 'overflow-x-hidden' ensures no horizontal scrollbar 
+    // when the large radial gradients bleed out of the side
+    <div className="min-h-screen bg-black overflow-x-hidden">
       <Navbar />
       <main>
-        <Hero></Hero>
-        <About></About>
-        <Skills></Skills>
-        <Project></Project>
-        <Contact></Contact>
-        <Footer></Footer>
+        <Hero />
+        <About />
+        <Skills />
+        <Project />
+        <Contact />
+        <Footer />
       </main>
     </div>
   );

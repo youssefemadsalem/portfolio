@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center overflow-hidden bg-black"
+      className="relative min-h-screen flex items-center bg-black"
     >
       <RadialGradientBackground variant="hero" />
 

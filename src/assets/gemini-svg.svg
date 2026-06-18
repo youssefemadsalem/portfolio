@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Premium Dark Squircle Background -->
+  <rect width="512" height="512" rx="128" fill="#080808" />
+  
+  <!-- Subtle outer border to separate from dark browser tabs -->
+  <rect width="508" height="508" x="2" y="2" rx="126" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="4" />
+
+  <!-- Isometric 'Y' Box Group -->
+  <!-- The thick #080808 stroke creates the negative-space 'Y' -->
+  <g stroke="#080808" stroke-width="28" stroke-linejoin="round">
+    
+    <!-- Top Face: The Neon Tech Accent -->
+    <path d="M 256 80 L 412 170 L 256 260 L 100 170 Z" fill="#8dff69" />
+    
+    <!-- Right Face: Crisp White Contrast -->
+    <path d="M 256 260 L 412 170 L 412 350 L 256 440 Z" fill="#ffffff" />
+    
+    <!-- Left Face: Sleek Dark Grey Depth -->
+    <path d="M 256 260 L 256 440 L 100 350 L 100 170 Z" fill="#222222" />
+    
+  </g>
+</svg>
