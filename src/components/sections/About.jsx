@@ -54,19 +54,24 @@ const About = () => {
               </FadeIn>
             </div>
             <FadeIn delay={300}>
-              <div className=" flex gap-20">
-                {ABOUT_STATS.map((stat, index) => (
-                  <div key={index} className="relative">
-                    <div className="absolute -left-4 top-0 w-1 h-full bg-linear-to-b from-primary via-primary/50 to-primary/20 rounded-full"></div>
-                    <div className="text-3xl font-normal test-white mb-2 font-mono">
-                      {stat.value}
-                    </div>
-                    <p className="text-sm text-white/60 leading-snug">
-                      {stat.label}
-                    </p>
-                  </div>
-                ))}
-              </div>
+ <div className="flex flex-col sm:flex-row gap-8 sm:gap-20">
+  {ABOUT_STATS.map((stat, index) => (
+    <div key={index} className="relative pl-5 sm:pl-0">
+      {/* Visual decorative bar */}
+      <div className="absolute left-0 sm:-left-4 top-0 w-1 h-full bg-linear-to-b from-primary via-primary/50 to-primary/20 rounded-full"></div>
+      
+      {/* Stat Value (Fixed 'test-white' typo here) */}
+      <div className="text-3xl font-normal text-white mb-2 font-mono">
+        {stat.value}
+      </div>
+      
+      {/* Stat Label */}
+      <p className="text-sm text-white/60 leading-snug">
+        {stat.label}
+      </p>
+    </div>
+  ))}
+</div>
             </FadeIn>
 
             <FadeIn delay={400}>
