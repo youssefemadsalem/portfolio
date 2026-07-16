@@ -17,19 +17,19 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center bg-black"
+      // Added overflow-hidden to contain the moving gradients
+      className="relative min-h-screen flex items-center bg-black overflow-hidden"
     >
       <RadialGradientBackground variant="hero" />
 
       {/* Content Container */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
-        {/* Added justify-items-center for mobile/tablet alignment */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center justify-items-center lg:justify-items-start">
+          
           {/* Left Column - Content */}
           <div className="text-left w-full">
             <FadeIn delay={0}>
               <div className="inline-flex items-center gap-2.5 px-4.5 py-2.75 mb-8 bg-linear-to-r from-primary/10 via-primary/15 to-primary/20 border border-primary/20 rounded-full">
-          
                 <span className="text-xs md:text-sm text-white tracking-[1.2px]">
                 {PERSONAL_INFO.location}
                 </span>
@@ -81,7 +81,6 @@ const Hero = () => {
           {/* Right Column - Developer Image */}
           <FadeIn delay={200} className="w-full">
             <div className="relative">
-              {/* Changed ml-auto to mx-auto for centering, and lg:ml-auto to return to right on desktop */}
               <div className="relative overflow-hidden rounded-2xl aspect-4/5 max-w-125 mx-auto lg:ml-auto group">
                 <div className="absolute inset-0 rounded-2xl overflow-hidden">
                   <div className="absolute inset-0.5 bg-linear-to-r from-primary/20 via-primary/10 to-primary animate-spin-slow rounded-2xl"></div>
@@ -127,7 +126,7 @@ const Hero = () => {
 
       <button
         onClick={() => scrollToSection("about")}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-20"
       >
         <ChevronDown className="w-6 h-6 text-primary" />
       </button>

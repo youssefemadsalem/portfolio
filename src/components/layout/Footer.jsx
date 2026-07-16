@@ -12,13 +12,12 @@ const Footer = () => {
     { label: "About", id: "about" },
     { label: "Skills", id: "skills" },
     { label: "Projects", id: "projects" },
-    { label: "Services", id: "services" },
     { label: "Contact", id: "contact" },
   ];
 
 
   return (
-    <footer id="footer" className="relative bg-black border-t border-white/5 pt-20 pb-10 overflow-hidden">
+    <footer id="footer" className="relative bg-black  pt-20 pb-10 overflow-hidden">
       {/* Subtle background gradient to match the design style */}
       <RadialGradientBackground variant="footer" />
 
