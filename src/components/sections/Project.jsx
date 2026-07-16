@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FiFolder, FiGlobe, FiLayers, FiTerminal } from "react-icons/fi";
+import { FiFolder, FiGrid, FiCode, FiCpu, FiTerminal } from "react-icons/fi";
 import { projects, categories } from "../../data/projects";
 import ProjectCard from "../ui/ProjectCard";
 import FadeIn from "../animations/FadeIn";
@@ -12,13 +12,14 @@ const Project = () => {
     activeCategory === "All" ? true : project.category === activeCategory
   );
 
-  // Helper map to assign React Icons to your categories
+  // FIXED: Mapped to match your actual data categories array cleanly
   const getCategoryIcon = (category) => {
     switch (category) {
       case "All": return <FiFolder className="w-4 h-4" />;
-      case "Web Apps": return <FiGlobe className="w-4 h-4" />;
-      case "UI Components": return <FiTerminal className="w-4 h-4" />;
-      case "Full Stack": return <FiLayers className="w-4 h-4" />;
+      case "Angular": return <FiGrid className="w-4 h-4" />;
+      case "React / Next.js": return <FiCode className="w-4 h-4" />;
+      case "Vanilla": return <FiTerminal className="w-4 h-4" />;
+      case "Backend": return <FiCpu className="w-4 h-4" />;
       default: return null;
     }
   };
@@ -29,7 +30,7 @@ const Project = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Header Header */}
+        {/* Header Section */}
         <div className="flex flex-col items-center text-center mb-16">
           <FadeIn delay={0}>
             <div className="inline-flex items-center gap-2 px-4 py-2 border border-primary/20 bg-primary/10 rounded-full mb-4">

@@ -1,5 +1,5 @@
 import React from "react";
-import { FiExternalLink, FiGithub } from "react-icons/fi";
+import { FiExternalLink, FiGithub, FiLock } from "react-icons/fi";
 import { LuTrendingUp } from "react-icons/lu";
 
 const ProjectCard = ({ project }) => {
@@ -21,24 +21,46 @@ const ProjectCard = ({ project }) => {
             {project.category}
           </div>
           
-          {/* Action Links Overlay */}
-          <div className="absolute bottom-4 right-4 z-10 flex gap-2">
-            <a
-              href={project.demoUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="p-2.5 bg-black/60 backdrop-blur-md border border-white/10 hover:border-white/30 text-white rounded-xl transition-all duration-200"
-            >
-              <FiExternalLink className="w-4 h-4" />
-            </a>
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="p-2.5 bg-black/60 backdrop-blur-md border border-white/10 hover:border-white/30 text-white rounded-xl transition-all duration-200"
-            >
-              <FiGithub className="w-4 h-4" />
-            </a>
+          {/* Action Links or Private/Dev Status Badges */}
+          <div className="absolute bottom-4 right-4 z-10 flex items-center gap-2">
+            {project.isPrivate || project.inDevelopment ? (
+              <div className="flex gap-1.5 items-center">
+                {project.isPrivate && (
+                  <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-red-500/10 text-red-400 border border-red-500/20 backdrop-blur-md text-[11px] font-medium rounded-xl shadow-lg">
+                    <FiLock className="w-3 h-3" />
+                    Private
+                  </span>
+                )}
+                {project.inDevelopment && (
+                  <span className="px-3 py-1.5 bg-amber-500/10 text-amber-400 border border-amber-500/20 backdrop-blur-md text-[11px] font-medium rounded-xl shadow-lg">
+                    In Development
+                  </span>
+                )}
+              </div>
+            ) : (
+              <>
+                {project.demoUrl && (
+                  <a
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="p-2.5 bg-black/60 backdrop-blur-md border border-white/10 hover:border-white/30 text-white rounded-xl transition-all duration-200"
+                  >
+                    <FiExternalLink className="w-4 h-4" />
+                  </a>
+                )}
+                {project.githubUrl && (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="p-2.5 bg-black/60 backdrop-blur-md border border-white/10 hover:border-white/30 text-white rounded-xl transition-all duration-200"
+                  >
+                    <FiGithub className="w-4 h-4" />
+                  </a>
+                )}
+              </>
+            )}
           </div>
         </div>
 
