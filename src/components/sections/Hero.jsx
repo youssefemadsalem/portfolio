@@ -29,16 +29,16 @@ const Hero = () => {
           <div className="text-left w-full">
             <FadeIn delay={0}>
               <div className="inline-flex items-center gap-2.5 px-4.5 py-2.75 mb-8 bg-linear-to-r from-primary/10 via-primary/15 to-primary/20 border border-primary/20 rounded-full">
-                <Star className="w-4 h-4 text-white fill-white" />
+          
                 <span className="text-xs md:text-sm text-white tracking-[1.2px]">
-                  {PERSONAL_INFO.title} | Based in {PERSONAL_INFO.location}
+                {PERSONAL_INFO.location}
                 </span>
               </div>
             </FadeIn>
 
             <FadeIn delay={100}>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-white mb-6 leading-tight">
-                FullStack Web Developer
+                 {PERSONAL_INFO.title}
               </h1>
             </FadeIn>
 
@@ -50,11 +50,11 @@ const Hero = () => {
 
             <FadeIn delay={300}>
               <button
-                onClick={() => scrollToSection("contact")}
+                onClick={() => scrollToSection("projects")}
                 className="inline-flex items-center gap-0 mb-12 group"
               >
                 <div className="relative z-10 bg-white text-[#212121] rounded-[17px] px-6.5 py-3.25 text-base font-medium border border-white">
-                  Get in Touch
+                  View My Work
                 </div>
               </button>
             </FadeIn>

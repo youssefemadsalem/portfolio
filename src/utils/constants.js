@@ -9,15 +9,16 @@ import {
 
 export const PERSONAL_INFO = {
   name: "youssef emadeldin",
-  title: "FullStack Web Developer",
+  title: "Junior FullStack Web Developer",
   email: "youssefemadeldin22@gmail.com",
   location: "Cairo, Egypt",
   tagline: "Crafting seamless digital experiences with modern web technologies",
-  resume: "/youssef-emad-eldin-Cvs.pdf",
+  resume: "/Youssef_Emad_eldeen_CV.pdf",
   bio: [
-    "I'm a passionate React developer with over 3 years of experience building",
-    "My expertise spans the entire frontend ecosystem, from React and Next",
-    "When I'm not coding, you'll find me contributing to open-source proj",
+    "I am a Computer Science graduate and an ITI Web & UI Track scholar with hands-on corporate experience building responsive interfaces",
+    "My technical expertise spans Angular, React, TypeScript, and Node.js, allowing me to bridge the gap between clean interfaces and robust backend APIs.",
+    "When I'm not coding, you'll find me training at the gym, hitting my running targets, or staying up to date with modern web standards."
+
   ],
   description: `Building modern, scalable web applications with React, JavaScript.
 and cutting-edge technologies. Transforming ideas into exceptional
@@ -25,23 +26,21 @@ digital experiences.`,
 };
 
 export const SOCIAL_LINKS = {
-  github: "https://github.com/",
-  linkedin: "https://linkedin.com/",
-  twitter: "https://twitter.com/",
-  dribbble: "https://dribbble.com/",
+  github: "https://github.com/youssefemadsalem",
+  linkedin: "https://www.linkedin.com/in/youssef-emad-aldeen/",
 };
 
 export const STATS = [
-  { label: "Years Experience", value: "3+" },
-  { label: "Projects Completed", value: "50+" },
-  { label: "Technologies", value: "15+" },
-  { label: "Client Satisfaction", value: "98%" },
+  { label: "Years Experience", value: "2+" },
+  { label: "Projects Completed", value: "10+" },
+  { label: "Technologies", value: "12+" },
+  { label: "Clean Code", value: "100%" },
 ];
 
 export const ABOUT_STATS = [
-  { label: "Happy Clients", value: "45+" },
-  { label: "Code Commits", value: "2.5K+" },
-  { label: "GitHub Stars", value: "500+" },
+{ label: "Finished Projects", value: "10+" },
+  { label: "Code Commits", value: "0.5K+" },
+  { label: "Tech Credentials", value: "3+" },
 ];
 
 export const NAV_LINKS = [

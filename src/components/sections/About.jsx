@@ -37,7 +37,7 @@ const About = () => {
               </FadeIn>
               <FadeIn delay={100}>
                 <h2 className="text-4xl lg:text-5xl font-normal text-white leading-tight">
-                  I am a passionate full-stack
+                I design & build high-performance web apps
                 </h2>
               </FadeIn>
               <FadeIn delay={200}>
@@ -100,7 +100,7 @@ const About = () => {
                         Expertise
                       </h3>
                       <p className="text-sm text-white/70 leading-relaxed">
-                        Specialized in building scala
+                       Building modular, scalable interfaces in Angular & React.
                       </p>
                     </div>
                   </div>
@@ -117,7 +117,7 @@ const About = () => {
                     Clean Code
                   </h3>
                   <p className="text-sm text-white/70 leading-relaxed">
-                    Writing maintainable, well-documented
+                  Writing strictly-typed, readable, and maintainable code.
                   </p>
                 </div>
               </div>
@@ -135,7 +135,7 @@ const About = () => {
                     Performance
                   </h3>
                   <p className="text-sm text-white/70 leading-relaxed">
-                    Optimizing for speed and efficiency in all solutions
+                    Optimizing build sizes, SEO, and fast client-side loading times.
                   </p>
                 </div>
               </div>
@@ -149,7 +149,7 @@ const About = () => {
                         100%
                       </div>
                       <div className="text-sm text-white/60">
-                        Client Satisfaction
+                     Enterprise-Ready
                       </div>
                     </div>
                     <div>

@@ -16,12 +16,6 @@ const Footer = () => {
     { label: "Contact", id: "contact" },
   ];
 
-  const socialLinks = [
-    { icon: <FiGithub className="w-5 h-5" />, url: "https://github.com" },
-    { icon: <FiLinkedin className="w-5 h-5" />, url: "https://linkedin.com" },
-    { icon: <FiTwitter className="w-5 h-5" />, url: "https://twitter.com" },
-    { icon: <FiGlobe className="w-5 h-5" />, url: "https://example.com" },
-  ];
 
   return (
     <footer id="footer" className="relative bg-black border-t border-white/5 pt-20 pb-10 overflow-hidden">
@@ -87,28 +81,25 @@ const Footer = () => {
           </div>
 
           {/* Right Column: Social Profiles */}
-          <div className="md:col-span-4 flex flex-col gap-6">
+<div className="md:col-span-4 flex flex-col gap-6">
             <div>
               <h3 className="text-white text-base font-semibold mb-3 tracking-wide">
-                Connect With Me
+                Current Focus
               </h3>
-              <p className="text-sm text-white/50 leading-relaxed">
-                Let's connect and create something amazing together.
+              <p className="text-sm text-white/50 leading-relaxed mb-4">
+                Advancing enterprise full-stack engineering at ITI  while actively seeking junior developer opportunities.
               </p>
             </div>
 
-            <div className="flex items-center gap-3">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="p-3.5 bg-[#111111]/60 border border-white/5 hover:border-primary/30 text-white/60 hover:text-primary rounded-2xl transition-all duration-300 shadow-[0_0_15px_rgba(0,0,0,0.5)]"
-                >
-                  {social.icon}
-                </a>
-              ))}
+            {/* Active Status Badge */}
+            <div className="flex items-center gap-2.5 self-start px-4 py-2 bg-primary/10 border border-primary/20 rounded-2xl">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#8DFF69] opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#8DFF69]"></span>
+              </span>
+              <span className="text-xs text-white/80 font-medium tracking-wide">
+                Available for Roles
+              </span>
             </div>
           </div>
 
