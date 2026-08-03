@@ -11,6 +11,8 @@ const Footer = () => {
   const quickLinks = [
     { label: "About", id: "about" },
     { label: "Skills", id: "skills" },
+    { label: "Education", id: "education" },
+    { label: "Internships", id: "internships" },
     { label: "Projects", id: "projects" },
     { label: "Contact", id: "contact" },
   ];

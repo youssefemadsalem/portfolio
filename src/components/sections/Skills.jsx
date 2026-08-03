@@ -2,6 +2,7 @@ import React from "react";
 import { Skill } from "../../data/skills";
 import { Sparkles } from "lucide-react"; 
 import FadeIn from "../animations/FadeIn";
+import RadialGradientBackground from "../backgrounds/RadialGradientBackground";
 
 const Skills = () => {
   // Groups your data array items by matching their exact name strings
@@ -55,11 +56,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="relative py-20 bg-black overflow-hidden">
-      {/* Background Decorative Ambient Glows */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl opacity-50"></div>
-        <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl opacity-50"></div>
-      </div>
+      <RadialGradientBackground variant="skills" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
