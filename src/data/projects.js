@@ -69,7 +69,7 @@ export const projects = [
     image: "images/projects/10.png",
     category: "Angular",
     technologies: ["Angular", "TypeScript", "Tailwind CSS", "REST APIs"],
-    demoUrl: "https://fresh-cart-p9pl.vercel.app/",
+    demoUrl: "https://fresh-cart-egy.vercel.app/",
     githubUrl: "https://github.com/youssefemadsalem/fresh__cart",
   },
      {
