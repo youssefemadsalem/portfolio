@@ -127,4 +127,17 @@
   .animate-float-blob-reverse {
     animation: float-blob 20s ease-in-out infinite reverse;
   }
+
+  @keyframes slideRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(200%);
+    }
+  }
+
+  .animate-slide-right {
+    animation: slideRight 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
 }
