@@ -42,16 +42,6 @@ export const projects = [
     inDevelopment: true,
   },
   {
-    id: 5,
-    title: "Niche",
-    description: "A modern, static-regenerated next-gen web app optimized for fast rendering times, deep metadata SEO compliance, and fluid layouts.",
-    image: "images/projects/5.png",
-    category: "React / Next.js",
-    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    demoUrl: "https://niche-murex-eight.vercel.app/",
-    githubUrl: "https://github.com/youssefemadsalem/Niche",
-  },
-  {
     id: 6,
     title: "RADI Backend",
     description: "A secure, decoupled RESTful API system architected to manage user validation, cart data arrays, and database mutations smoothly.",
