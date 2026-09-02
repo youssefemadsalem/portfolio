@@ -6,7 +6,7 @@ import { scrollToSection, useScrollSpy } from "../../hooks/useScrollSpy";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const activeSection = useScrollSpy(NAV_LINKS.map((link) => link.href));
+  const activeSection = useScrollSpy(NAV_LINKS.map((link) => link.id));
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +33,7 @@ const Navbar = () => {
           <div className="flex items-center gap-4">
             <Code className="w-6 h-6 text-primary" />
             <button
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              onClick={() => scrollToSection("hero")}
               className="text-2xl font-bold bg-linear-to-r from-primary via-primary/50 to-primary/30 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
             >
               {PERSONAL_INFO.name.split(" ")[0]}
@@ -47,7 +47,7 @@ const Navbar = () => {
                 key={link.id}
                 onClick={() => handleNavClick(link.id)}
                 className={`transition-colors font-medium ${
-                  activeSection === link.href
+                  activeSection === link.id
                     ? "text-primary"
                     : "text-white/70 hover:text-white"
                 }`}
@@ -93,7 +93,7 @@ const Navbar = () => {
                 key={link.id}
                 onClick={() => handleNavClick(link.id)}
                 className={`block w-full text-left px-4 py-3 rounded-lg transition-all ${
-                  activeSection === link.href
+                  activeSection === link.id
                     ? "text-white bg-white/10"
                     : "text-white/70 hover:text-white"
                 }`}

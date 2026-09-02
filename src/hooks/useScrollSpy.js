@@ -37,14 +37,35 @@ export const useScrollSpy = (sectionIds, offset = 100) => {
   return activeSection;
 };
 
-// Smooth scroll to a section
+// Smooth scroll to a section using requestAnimationFrame
 export const scrollToSection = (sectionId, offset = 80) => {
   const section = document.getElementById(sectionId);
   if (section) {
-    const top = section.offsetTop - offset;
-    window.scrollTo({
-      top,
-      behavior: "smooth",
-    });
+    const targetPosition = section.getBoundingClientRect().top + window.scrollY - offset;
+    const startPosition = window.scrollY;
+    const distance = targetPosition - startPosition;
+    const duration = 700;
+    let start = null;
+
+    const ease = (t, b, c, d) => {
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t * t * t + b;
+      t -= 2;
+      return (-c / 2) * (t * t * t * t - 2) + b;
+    };
+
+    const animation = (currentTime) => {
+      if (start === null) start = currentTime;
+      const timeElapsed = currentTime - start;
+      const run = ease(timeElapsed, startPosition, distance, duration);
+      window.scrollTo(0, run);
+      if (timeElapsed < duration) {
+        requestAnimationFrame(animation);
+      } else {
+        window.scrollTo(0, targetPosition);
+      }
+    };
+
+    requestAnimationFrame(animation);
   }
 };
